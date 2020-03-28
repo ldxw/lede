@@ -557,7 +557,8 @@ TARGET_DEVICES += lava_lr-25g001
 
 define Device/lenovo_newifi-y1
   SOC := mt7620a
-  IMAGE_SIZE := 16064k
+  #IMAGE_SIZE := 16064k
+  IMAGE_SIZE := 32448k
   DEVICE_VENDOR := Lenovo
   DEVICE_MODEL := Y1
   DEVICE_PACKAGES := kmod-mt76x2 kmod-usb2 kmod-usb-ohci
