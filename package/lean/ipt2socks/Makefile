@@ -8,12 +8,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=ipt2socks
-PKG_VERSION:=1.1.2
-PKG_RELEASE:=1
+PKG_VERSION:=1.1.3
+PKG_RELEASE:=2
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/zfl9/ipt2socks.git
-PKG_SOURCE_VERSION:=cfbc2189356aba7fcafb0bc961a95419f313d8a7
+PKG_SOURCE_VERSION:=c1413335f0b5f15241d7072204902778d122a578
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION)
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION).tar.gz
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)/$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION)
@@ -23,6 +23,7 @@ include $(INCLUDE_DIR)/package.mk
 define Package/ipt2socks
 	SECTION:=net
 	CATEGORY:=Network
+	SUBMENU:=Web Servers/Proxies
 	TITLE:=Utility for converting iptables (REDIRECT/TPROXY) to SOCKS5
 	URL:=https://github.com/zfl9/ipt2socks
 endef
